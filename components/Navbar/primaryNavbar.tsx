@@ -2,8 +2,10 @@ import Link from "next/link";
 import React from "react";
 import MobileMenu from "../MobileMenu/mobileMenu";
 import { MobileNavbarData } from "@/DummyData/Data";
+import { IoLogoPinterest } from "react-icons/io";
+import { IoLogoInstagram } from "react-icons/io";
 
-const Navbar = () => {
+const PrimaryNavbar = () => {
   const isAdmin = true;
   return (
     <div className="relative h-20 ">
@@ -29,15 +31,15 @@ const Navbar = () => {
           ))}
         </div>
         <div>
-          {isAdmin ? (
+          {!isAdmin ? (
             <div className="flex gap-4">
               <Link href="/">Login</Link>
               <Link href="/">Sign Up</Link>
             </div>
           ) : (
-            <div className="flex gap-4">
-              <Link href="/">instagram</Link>
-              <Link href="/">pintrest</Link>
+            <div className="flex gap-4 md:gap-8">
+              <IoLogoInstagram size={25} className="cursor-pointer" />
+              <IoLogoPinterest size={25} className="cursor-pointer" />
             </div>
           )}
         </div>
@@ -46,4 +48,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default PrimaryNavbar;

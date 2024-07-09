@@ -32,7 +32,13 @@ const MobileMenu = () => {
       {isOpen && (
         <div className="absolute bg-black text-white left-0 top-20  w-full h-[calc(100vh-80px)]  flex flex-col justify-center items-center gap-4 text-xl z-10">
           {MobileNavbarData.map(({ url, id, title }) => (
-            <Link href={url} key={id}>
+            <Link
+              href={url}
+              key={id}
+              onClick={() => {
+                setIsOpen(false), setShowMenuIcon(true);
+              }}
+            >
               {title}
             </Link>
           ))}
