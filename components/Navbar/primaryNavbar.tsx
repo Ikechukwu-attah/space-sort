@@ -8,7 +8,7 @@ import { IoLogoInstagram } from "react-icons/io";
 const PrimaryNavbar = () => {
   const isAdmin = true;
   return (
-    <div className="relative h-20 ">
+    <div className="relative h-20 bg-[#091334] text-white ">
       {/* Mobile screen */}
       <div className="flex h-full  justify-between p-4 items-center  md:hidden">
         <div className="text-2xl">
