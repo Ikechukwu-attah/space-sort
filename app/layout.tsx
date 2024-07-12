@@ -24,7 +24,7 @@ export default function RootLayout({
       >
         <Header />
         {/* <Header title={""} /> */}
-        <div className=" max-w-screen-lg w-full flex-grow p-4 mx-auto">
+        <div className=" max-w-screen-xl w-full flex-grow p-4 mx-auto">
           {children}
         </div>
 

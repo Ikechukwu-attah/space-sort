@@ -13,6 +13,14 @@ interface IServicesData {
   data?: string[];
 }
 
+interface ITestimonialsData {
+  id: number;
+  name: string;
+  review: string;
+  image: string;
+  rating: number;
+}
+
 export const MobileNavbarData: IMobileNavbarData[] = [
   { id: 1, url: "/", title: ROUTES_NAMES.HOME_PAGE },
   { id: 2, url: "/services", title: ROUTES_NAMES.SERVICES },
@@ -65,5 +73,56 @@ export const servicesData: IServicesData[] = [
     title: "Laundry",
     description: `Does tackling the laundry seem like a daunting task? Don't despair.
 Let's create a more efficient and effective space so that you can get it done and move on! `,
+  },
+];
+
+export const testimonialData: ITestimonialsData[] = [
+  {
+    id: 1,
+    name: "John Doe",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    review:
+      "The Space Sort transformed my cluttered home into a serene space. Highly recommended!",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    image: "https://randomuser.me/api/portraits/women/1.jpg",
+    review:
+      "Excellent service! My office is now organized and efficient, thanks to their expertise.",
+    rating: 4,
+  },
+  {
+    id: 3,
+    name: "Alice Johnson",
+    image: "https://randomuser.me/api/portraits/women/2.jpg",
+    review:
+      "Professional and effective. My living room looks amazing and feels so much more spacious.",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "Bob Brown",
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
+    review:
+      "Great job! The team was punctual, professional, and left my home looking immaculate.",
+    rating: 4,
+  },
+  {
+    id: 5,
+    name: "Charlie Davis",
+    image: "https://randomuser.me/api/portraits/men/3.jpg",
+    review:
+      "Highly satisfied with the service. They organized my garage perfectly. Worth every penny!",
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "Diana Evans",
+    image: "https://randomuser.me/api/portraits/women/3.jpg",
+    review:
+      "Amazing transformation! My kitchen is now clutter-free and so much more functional.",
+    rating: 5,
   },
 ];
